@@ -6,7 +6,7 @@ const int In2 = 11;
 const int In3 = 12;      
 const int In4 = 13;
 
-void setup() {
+void setup(){
   //TRCT5000
   pinMode(DR, INPUT);
   pinMode(DL, INPUT);
@@ -50,6 +50,6 @@ void carstop(){
   digitalWrite(In4, LOW);
 }
 
-void loop() {
+void loop(){
 
 }
