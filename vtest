@@ -1,0 +1,18 @@
+void setup() {
+  Serial.begin(9600);
+  //TRCT5000
+  pinMode(2, INPUT);//Right
+  pinMode(3, INPUT);//left
+  //L298N
+  pinMode(10, OUTPUT);//IN1
+  pinMode(11, OUTPUT);//IN2
+  pinMode(12, OUTPUT);//IN3
+  pinMode(13, OUTPUT);//IN4
+}
+
+void loop() {
+  digitalWrite(10, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(13, LOW);
+}
