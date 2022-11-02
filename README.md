@@ -1,4 +1,8 @@
 # arduino car bot
+## TRCT5000
+white > LOW
+black > HIGH
+
 ## motor
 ```
 ┌───────────┐─── +
