@@ -1,0 +1,59 @@
+const int DR = 2;      
+const int DL = 3;  
+
+const int In1 = 10;
+const int In2 = 11;
+const int In3 = 12;      
+const int In4 = 13;
+
+void setup(){
+  //TRCT5000
+  pinMode(DR, INPUT);
+  pinMode(DL, INPUT);
+  //L298N
+  pinMode(In1, OUTPUT);
+  pinMode(In2, OUTPUT);
+  pinMode(In3, OUTPUT);
+  pinMode(In4, OUTPUT);
+}
+void carfront(){
+  digitalWrite(In1, LOW);
+  digitalWrite(In2, HIGH);
+  digitalWrite(In3, HIGH);
+  digitalWrite(In4, LOW);
+}
+void carback(){
+  digitalWrite(In1, HIGH);
+  digitalWrite(In2, LOW);
+  digitalWrite(In3, LOW);
+  digitalWrite(In4, HIGH);
+}
+
+void carright(){
+  digitalWrite(In1, HIGH);
+  digitalWrite(In2, LOW);
+  digitalWrite(In3, HIGH);
+  digitalWrite(In4, LOW);
+}
+
+void carleft(){
+  digitalWrite(In1, LOW);
+  digitalWrite(In2, HIGH);
+  digitalWrite(In3, LOW);
+  digitalWrite(In4, HIGH);
+}
+
+void carstop(){
+  digitalWrite(In1, LOW);
+  digitalWrite(In2, LOW);
+  digitalWrite(In3, LOW);
+  digitalWrite(In4, LOW);
+}
+//black = HIGH , white = LOW
+void loop(){
+  if(digitalRead(DR)==LOW && digitalRead(DL)==LOW){
+    carfront();
+    delay(100);
+  }
+  carstop();
+}
