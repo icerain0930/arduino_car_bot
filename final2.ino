@@ -13,7 +13,7 @@ const int In3 = 12;
 const int In4 = 13;
 const int ENA = 6;
 const int ENB = 9;
-int v = 200;//0~255
+int v = 150;//0~255
 
 const unsigned int MODE = 2;
 int *  mode;
