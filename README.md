@@ -1,5 +1,5 @@
 # arduino car bot
-## TRCT5000
+## TCRT5000
 ```
 DR => right
 DL => left
